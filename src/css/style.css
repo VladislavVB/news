@@ -5,10 +5,6 @@
           box-sizing: border-box;
 }
 
-*:focus {
-  display: none;
-}
-
 .button {
   position: relative;
 }
@@ -432,6 +428,11 @@
   width: 100%;
 }
 
+.order-block {
+  position: relative;
+  width: 100%;
+}
+
 .order-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,25 +447,39 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 70%;
+  margin: auto;
 }
 
 .order-form input {
   color: #000;
-  width: 50%;
+  width: 100%;
   border-radius: 5px;
   border: 2px solid #087ec2;
   padding: 15px 25px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.order-form label {
+  text-align: right;
+  display: none;
+  position: absolute;
+  top: -25px;
+  right: 0;
 }
 
 .order-form button {
-  width: 50%;
+  width: 100%;
   border: none;
   background-color: #087ec2;
   border-radius: 5px;
   color: #fff;
   height: 52px;
   cursor: pointer;
+}
+
+input:focus + label {
+  display: inline-block;
 }
 
 @media screen and (max-width: 992px) {
@@ -509,6 +524,10 @@
   .promosecond-button {
     width: 100%;
   }
+  .order-form {
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -538,13 +557,24 @@
     max-width: 200px;
   }
   .promosecond-text {
-    font-size: 16px;
+    font-size: 14px;
   }
   .promosecond-advansment ul li {
     font-size: 14px;
   }
   .reviews-card-text {
-    font-size: 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .reviews-card-header-name {
+    margin-left: 5px;
+    font-size: 22px;
+  }
+  .reviews-card-header-img {
+    width: 70px;
+    height: 70px;
   }
 }
 /*# sourceMappingURL=style.css.map */
