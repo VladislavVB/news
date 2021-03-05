@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  display: none;
+}
+
+.button {
+  position: relative;
+}
+
+.button a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  padding-bottom: 50px;
+}
+
+.promo {
+  position: relative;
+  background-color: #f7f9fa;
+}
+
+.promo-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f7f9fa;
+}
+
+.promo-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.promo-video::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.promo-title {
+  text-align: center;
+  color: #fff;
+}
+
+.promo-card-img {
+  margin: auto;
+  max-width: 50%;
+}
+
+.promo-card-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.promo-card ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.promo-card ul li {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.promo-card-button {
+  position: relative;
+  background-color: #fff;
+  border: none;
+  width: 250px;
+  height: 45px;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promo-card-button:hover {
+  background-color: #f7f9fa;
+}
+
+.promo-card-button a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.poduct {
+  background-color: #f7f9fa;
+}
+
+.poduct-crad {
+  border: 2px solid #087ec2;
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: #fff;
+}
+
+.poduct-crad-img {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #087ec2;
+  margin-bottom: 10px;
+}
+
+.poduct-crad-img img {
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.poduct-crad-description {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.poduct-crad-button {
+  border: 2px solid #087ec2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.poduct-crad-main {
+  border: 2px solid #087ec2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.poduct-crad-main img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  margin: 30px;
+}
+
+.poduct-crad-main-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews {
+  background-color: #f7f9fa;
+}
+
+.reviews-card {
+  border: 2px solid #087ec2;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.reviews-card-header {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews-card-header-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-color: #fff;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews-card-header-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-card-header-name {
+  font-size: 48px;
+  font-weight: 500;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews-card-header-name span {
+  color: #ed1e22;
+}
+
+.reviews-card-text {
+  font-size: 24px;
+}
+
+.promosecond-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.promosecond-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.promosecond-text {
+  font-size: 24px;
+}
+
+.promosecond-button {
+  border: 2px solid #087ec2;
+  background-color: #fff;
+  height: 50px;
+  width: 250px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.promosecond-advansment {
+  margin-top: 40px;
+}
+
+.promosecond-advansment ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding-left: 0;
+}
+
+.promosecond-advansment ul li {
+  list-style: none;
+}
+
+.order {
+  background-color: #f7f9fa;
+}
+
+.order-title {
+  text-align: center;
+}
+
+.order-time {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.order-card-price {
+  text-align: center;
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.order-card-price-old {
+  margin-right: 30px;
+  font-size: 20px;
+  color: #ed1e22;
+}
+
+.order-card-img {
+  margin: auto;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.order-card-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.order-form {
+  color: #000 !important;
+}
+
+.order-form input {
+  color: #000 !important;
+}
+/*# sourceMappingURL=style.css.map */
